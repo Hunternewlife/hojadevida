@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/7045981063.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+<body>
+   <div class="options"><a href="#" class="color">ES  </a><a href="#" class="color">  EN</a></div>
+   <div class="numeros">
+    <a class="option red" id="red" onclick="red()">idioms</a>
+    <a class="option blue" id="blue" onclick="blue()">About</a>
+    <a class="option green" id="green" onclick="green()">Studies</a>
+</div>
+   <div class="container">
+       <div class="numberone" id="one">
+           <div class="lobo">
+               <div class="wolf"></div>
+           </div>
+           <div class="lenguajes">
+                <div class="lengua">
+                    <h2>French A1</h2>
+                    <p>J'ai une connaissance de base du francais, etant capable d'avoir une conversation tres basique.</p>
+                </div>
+                <div class="lengua">
+                    <h2>English B2</h2>
+                    <p> my current level is a b2 i have worked for many american companies such as AT&T, Keter, care.com among others.
+                         I am able to maintain conversations on almost any topic.</p>
+                </div>
+                <div class="lengua">
+                    <h2>Espanol C2</h2>
+                    <p>Lenguaje nativo, creo nada mas que decir sobre este.</p>
+                </div>
+           </div>
+       </div>
+       <div class="numbertwo" id="two">
+           <div class="myself">
+               <h2> Carlos David Rueda</h2>
+               <div> Age: 30</div>
+               <div> City: Zipaquira</div>
+               <div> Full stack developer</div>
+               <div> Specializaded in javascript</div>
+               <hr>
+               <p> Hy, my name is david and I am a full stack developer, i am from a small town Zipaquira
+                   there I have lived almost my entire life, and I do love my cyty, I would like to move
+                   to Canada someday in the future and I have a lot of aspirations and goals in my carrer
+                   such as be a succesfull programer. 
+               </p>
+
+           </div>
+           <div class="bear">
+               <div class="oso"></div>
+           </div>
+           <div class="hobbies">
+               <h2>Hobbies</h2>
+               <p>
+                   "I consider myself as a gamer and I do play a lot of games
+                   in adition I have my own yoube channel is based on a game 
+                   called Dofus. I have played it since 2012"
+                   " In addition I used to play basket however cause of the 
+                   cuarentine I am not able to play it"
+               </p>
+           </div>
+       </div>
+       <div class="numberthree" id="three">
+           <div class="estudios">
+               <div class="estudio">
+                    <h2>Bootcamp</h2>
+                    <div>Full stact developer</div>
+                    <div>Bictia 2020</div>
+               </div>
+               <div class="estudio">
+                    <h2>Techlogist</h2>
+                    <div>sofware developer</div>
+                    <div>Politecnico 2022</div>
+               </div>
+               <div class="estudio">
+                    <h2>Online Course</h2>
+                    <div>web developer</div>
+                    <div>The odin project 2019</div>
+           </div>
+            </div>
+           <div class="aguila">
+               <div class="eagle"></div>
+           </div>
+       </div>
+   </div>
+   
+   <div class="logo">
+        <a class="t1 color" href="/">HUNTER</a>
+        <div class="t2">corporated</div>
+   </div>
+   <div class="links">
+       <div class="home center">
+            <div><a href="">SERVICES</a></div>
+            <div><i class="fas fa-home"></i></div>
+       </div>
+       <div class="about center">
+            <div><a href="/acerca">ABOUT</a></div>
+            <div><i class="fas fa-address-card"></i></div>
+       </div>
+       <div class="projects center">
+            <div><a href="">PROJECTS</a></div>
+            <div><i class="fas fa-project-diagram"></i></div>
+       </div>
+   </div>
+</body>
+<script>
+function myFunction() {
+    textob = document.getElementsByClassName('color');
+    colores = ["#6a097d","#ffd31d",'#c70039','#f5a8a8','#ff5200'];
+    for(let i = 0; i<textob.length; i++){
+            setInterval(function(){ 
+                newcolor = Math.round( Math.random()*5-1);
+                console.log(colores[newcolor]);
+                textob[i].style.color = colores[newcolor];
+            }, 2000);
+        }
+    }
+  myFunction();
+  one = document.getElementById('one');
+  two = document.getElementById('two');
+  three = document.getElementById('three');
+function red(){
+    one.style.display = "flex";
+    two.style.display = "none";
+    three.style.display = "none";
+}
+function blue(){
+    one.style.display = "none";
+    two.style.display = "flex";
+    three.style.display = "none";
+}
+function green(){
+    one.style.display = "none";
+    two.style.display = "none";
+    three.style.display = "flex";
+}
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/7045981063.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="options"><a href="#" class="color">ES  </a><a href="#" class="color">  EN</a></div>
+   <div class="banner">
+       <div class="gato">
+            <div class="imggato"></div>
+       </div>
+       <div class="titulo">
+           <div class="color">FULL ! </div>
+           <div class="color">STACK ! </div>
+           <div class="color">DEVELOPER !</div>
+       </div>
+   </div>
+   <div class="logo">
+       <a class="t1 color" href="/">HUNTER</a>
+       <div class="t2">corporated</div>
+   </div>
+   <div class="links">
+       <div class="home center">
+            <div><a href="">SERVICES</a></div>
+            <div><i class="fas fa-home"></i></div>
+       </div>
+       <div class="about center">
+            <div><a href="/acerca">ABOUT</a></div>
+            <div><i class="fas fa-address-card"></i></div>
+       </div>
+       <div class="projects center">
+            <div><a href="">PROJECTS</a></div>
+            <div><i class="fas fa-project-diagram"></i></div>
+       </div>
+   </div>
+</body>
+<script>
+function myFunction() {
+    textob = document.getElementsByClassName('color');
+    colores = ["#6a097d","#ffd31d",'#c70039','#f5a8a8','#ff5200', '#06623b'];
+    for(let i = 0; i<textob.length; i++){
+            setInterval(function(){ 
+                newcolor = Math.round( Math.random()*6-1);
+                console.log(colores[newcolor]);
+                textob[i].style.color = colores[newcolor];
+            }, 2000);
+        }
+    }
+  myFunction();
+
+</script>
+</html>
