@@ -36,6 +36,21 @@ app.get('/script', (peticion,respuesta)=>{
     respuesta.sendFile(`${__dirname}/public/scripts/script.css`);
 });
 
+app.get('/gato', (peticion,respuesta)=>{
+    respuesta.sendFile(`${__dirname}/public/img/gato.jpg`);
+});
+
+app.get('/lobo', (peticion,respuesta)=>{
+    respuesta.sendFile(`${__dirname}/public/img/wolf.jpg`);
+});
+
+app.get('/oso', (peticion,respuesta)=>{
+    respuesta.sendFile(`${__dirname}/public/img/bear.png`);
+});
+
+app.get('/aguila', (peticion,respuesta)=>{
+    respuesta.sendFile(`${__dirname}/public/img/eagle.png`);
+});
 
 app.listen(5500);
 console.log('funciona');

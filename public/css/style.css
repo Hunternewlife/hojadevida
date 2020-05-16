@@ -37,7 +37,7 @@ body a{
 }
 
 .imggato{
-    background-image: url(../img/gato.jpg);
+    background-image: url(/gato);
     height: 500px;
     width: 400px;
     background-size: contain;
@@ -169,7 +169,7 @@ body .numeros .option{
 }
 
 .wolf{
-    background-image: url(../img/wolf.jpg);
+    background-image: url(/lobo);
     background-size: contain;
     background-repeat: no-repeat;
     height: 500px;
@@ -210,7 +210,7 @@ body .numeros .option{
 .oso{
     width: 500px;
     height: 500px;
-    background-image: url(../img/bear.png);
+    background-image: url(/oso);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 30px;
@@ -258,7 +258,7 @@ body .numeros .option{
     top: 100px;
     width: 800px;
     height: 500px;
-    background-image: url(../img/eagle.png);
+    background-image: url(/aguila);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 30px;
